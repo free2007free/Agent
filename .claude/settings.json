@@ -11,11 +11,19 @@
       "mcp__Gmail__label_thread",
       "mcp__Gmail__label_message",
       "mcp__Gmail__unlabel_thread",
-      "mcp__Gmail__unlabel_message"
+      "mcp__Gmail__unlabel_message",
+      "mcp__Google_Calendar__list_calendars",
+      "mcp__Google_Calendar__list_events",
+      "mcp__Google_Calendar__get_event",
+      "mcp__Google_Calendar__suggest_time"
     ],
     "ask": [
       "mcp__Gmail__apply_sensitive_message_label",
-      "mcp__Gmail__apply_sensitive_thread_label"
+      "mcp__Gmail__apply_sensitive_thread_label",
+      "mcp__Google_Calendar__create_event",
+      "mcp__Google_Calendar__update_event",
+      "mcp__Google_Calendar__delete_event",
+      "mcp__Google_Calendar__respond_to_event"
     ]
   }
 }
