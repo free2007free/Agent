@@ -49,8 +49,19 @@
   - `from:someone@x.com` 特定寄件者
   - `has:attachment` 有附件
 - **讀全文**：`search_threads` 只回傳摘要，需要正文時用 `get_thread` 帶 threadId。
-- **標籤**：`label_thread` / `label_message` 只吃 **label ID**，不吃顯示名稱。先用 `list_labels` 查 ID。系統標籤可直接用：`INBOX`、`STARRED`、`IMPORTANT`、`UNREAD`、`TRASH` 等。
+- **標籤**：`label_thread` / `label_message` 只吃 **label ID**，不吃顯示名稱。系統標籤可直接用：`INBOX`、`STARRED`、`IMPORTANT`、`UNREAD`、`TRASH` 等。
 - **草稿**：`create_draft`。回覆既有信件時帶 `replyToMessageId`。收件者只接受純 email（不接受「名字 <email>」格式）。
+
+### 我的使用者標籤（label ID）
+| 標籤 | label ID |
+|------|------|
+| 工作 | `Label_2` |
+| 私人 | `Label_4` |
+| 含發票 | `Label_1` |
+| Notes | `Label_5` |
+| [Imap]/草稿 | `Label_6` |
+
+> 若我新增了標籤而清單對不上，用 `list_labels` 重查並更新此表。
 
 ---
 
